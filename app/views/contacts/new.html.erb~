@@ -1,0 +1,67 @@
+<% provide(:title, "Contact Us") %>
+<%
+meta keywords: %q(contact)
+%>
+	<div id="susnav"><%= render 'layouts/navbar' %></div>
+<div class="row">
+	<section id="contactbanner">
+		
+		<div class="container sections">
+			<h2 class="sectiontitlepage">Contact Us</h2>
+		</div>
+	</section>
+</div>
+<div class="circle3" data-stellar-ratio="2"></div>
+	<div class="circle4" style="position:absolute;"></div>
+	<div class="circle7" style="position:absolute; background-color: rgba(255, 194, 0, 1); left: 4%; width: 250px; height: 250px; border-radius: 125px;"></div>
+	<div class="circle8" style="position:absolute;" ></div>
+	<div class="circle14" style="position:absolute;"></div>
+<div class="row contactpage">
+ <div class="container">
+  <div class="row contactrow">
+	<div class="col-md-12 col-sm-12 col-xs-12 contactform">
+	     
+		<%= form_for(@contact) do |f| %>
+		    <div class="row formrow">
+			<div class="col-md-2 col-sm-2 col-xs-2 formcol">
+			    <%= f.label :name %>
+			</div>
+			<div class="col-md-10 col-sm-6 col-xs-12">
+			    <%= f.text_field :name %>
+			</div>
+		    </div>
+		    <div class="row formrow">
+			<div class="col-md-2 col-sm-2 col-xs-2 formcol">
+			    <%= f.label :email %>
+		    	</div>
+			<div class="col-md-10 col-sm-6 col-xs-12">
+			    <%= f.text_field :email %>
+			</div>
+		    </div>
+		    <div class="row formrow">
+			<div class="col-md-2 col-sm-2 col-xs-2 formcol">
+			    <%= f.label "Message" %>
+			</div>
+			<div class="col-md-10 col-sm-6 col-xs-12">
+			    <%= f.text_area :body, :rows => 15 %>
+			    <div class="hidden"><%= f.text_area :nickname, :hint => 'Leave this field blank!' %></div>
+			    <%= f.submit "Submit", :as => :button, class: "btn btn-large btn-sun" %>
+			</div>
+		    </div>
+		<p class="notice"><%= notice %></p>
+ 	        <p class="alert"><%= alert %></p>
+			   
+
+		      	    
+
+		<% end %>
+	</div>
+  </div>
+ </div>
+</div>
+
+<div class="row footertact">
+  <div class="col-md-6 col-sm-12 col-xs-12" id="footer">
+	© 2014 George's Seafood, Inc.
+  </div>
+</div>

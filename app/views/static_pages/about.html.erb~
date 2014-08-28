@@ -1,0 +1,23 @@
+<div id="susnav"><%= render 'layouts/navbar' %></div>
+<div class="row">
+	<section style="background-image: url('/seafood3.jpg'); background-size: cover;">
+		
+		<div class="container sections">
+			<h2 class="sectionaboutpage">About Us</h2>
+		</div>
+	</section>
+</div>
+
+<div class="row">
+	<div class="container">
+		<p class="biography">
+			George's Seafood is a seafood distribution company that operates from New York to Georgia, located in Norfolk, Virginia. Our founder, George Chrystostomides, had been interested in fishing for about as long as he's been alive. In 1971, a year after graduating from high school, his father leased him a small local fishing company that would become George's Seafood.
+		</p>
+	</div>
+</div>
+
+<div class="row footer">
+  <div class="col-md-6 col-sm-12 col-xs-12" id="footer">
+	© 2014 George's Seafood, Inc.
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div id="susnav"><%= render 'layouts/navbar' %></div>
+<div class="row">
+	<section style="background-image: url('seafood2.jpg'); background-size: cover;">
+		
+		<div class="container sections">
+			<h2 class="sectiontitlepage">Products</h2>
+		</div>
+	</section>
+</div>
+<div class="container">
+	<% if user_signed_in? %><%= link_to 'New Product', new_product_path, class: "btn btn-lg btn-seafood" %><% end %>
+</div>
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-md-4 col-sm-6 col-xs-12 products">
+        <h3 style="text-align:center"><%= product.name %></h3>
+        <div class="row productrow"><img class="productimage" src='<%= product.image_url(:thumb) %>'></div>
+	<% if user_signed_in? %>
+	  <div class="row modify">
+		<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Edit', edit_product_path(product), class: "btn btn-lg btn-seafood" %></div>
+		<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-lg btn-seafood" %></div>
+	  </div>
+	<% end %>
+      </div>
+    <% end %>
+  </div>
+
+<br>
+
+
+<script>
+	$(document).ready(function() {
+		$(".productimage").each(function() {
+			var str = $(this).attr('src');
+			var strarray = str.split("/");
+			var strid = strarray[4];
+			var strpath = (strarray[5].split("thumb_"))[1];
+			$(this).wrap($("<a>" ,{
+			href: "/uploads/product/image/" + strid + "/" + strpath,
+			class: "productlink"
+			}));
+		});
+	$(".productlink").fancybox();
+	});
+</script>

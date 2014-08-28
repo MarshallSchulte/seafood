@@ -1,0 +1,64 @@
+<% provide(:title, "Sustainability") %>
+
+<%
+meta keywords: %q(conservation, regulation)
+%>
+
+<script>
+$(document).ready(function(){
+	$.stellar( {hideDistantElements: false} );
+	$(window).resize(function() {
+		$.stellar('refresh');
+	});
+});
+$(window).load(function(){
+	$.stellar('refresh');
+}
+</script>
+	<div class="circle3" data-stellar-ratio="2"></div>
+	<div class="circle4" data-stellar-ratio="2.5"></div>
+	<div class="circle5" data-stellar-ratio="1.5"></div>
+	<div class="circle6" data-stellar-ratio="1.8"></div>
+	<div class="circle7" data-stellar-ratio="0.6"></div>
+	<div class="circle8" data-stellar-ratio="1.2"></div>
+	<div class="circle9" data-stellar-ratio="1.3"></div>
+	<div class="circle10" data-stellar-ratio="1.6"></div>
+	<div class="circle11 hidden-xs" data-stellar-ratio="1.5"></div>
+	<div class="circle12 hidden-xs" data-stellar-ratio="1.9"></div>
+	<div class="circle13 hidden-xs" data-stellar-ratio="1.8"></div>
+	<img id="sill1" data-stellar-ratio="1.1" src="fishsill.png">
+	<img id="sill2" data-stellar-ratio="1.1" src="fish2sill.png">
+	<img id="sill3" data-stellar-ratio="1.1" src="bassill.png">
+<div id="susnav"><%= render 'layouts/navbar' %></div>
+<div class="row ocean">
+	<section style="">
+		
+		<div class="container sections">
+			<h2 class="sectiontitlepage">Sustainability</h2>
+		</div>
+	</section>
+	
+	<div class="container oceans">
+		<div class="circle writing">
+			<p>For there to be a future in the seafood industry, there must be fish in the sea to catch. It sounds simple, but if we fish too much, we risk driving species to extinction, and then where would we be? It has happened before, and it can happen again unless we do something about it.
+			</p>
+		
+		</div>
+	</div>
+</div>
+<div class="row ocean2">
+	<div class="container oceans">
+		<div class="circle2 writing2">
+			<p> That is why each and every one of us must follow the regulations enacted by the Virginia Marine Resources Commission. Regulations help to ensure that the ocean's beauty and biological diversity will still be there for tomorrow to enjoy. These regulations can be found <a href="http://www.mrc.virginia.gov/commercial.shtm">here</a>.
+			</p>
+		
+		</div>
+	</div>
+</div>
+<div class="row footersus">
+  <div class="col-md-6 col-sm-12 col-xs-12" id="footer">
+	© 2014 George's Seafood, Inc.
+  </div>
+
+	<img id="lobster" src="lobster2.png">
+</div>

@@ -1,0 +1,5 @@
+Name: <%= @contact.name %>
+
+Email: <%= @contact.email %>
+
+Body: <%= @contact.body %>
