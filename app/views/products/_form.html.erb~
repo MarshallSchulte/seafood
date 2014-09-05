@@ -17,7 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :image %><br>
-    <%= f.text_field :image %>
+    <%= f.file_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :seasonal %><br>
+    <%= f.check_box :image %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -32,6 +32,11 @@ a:visited{
 #carousel{
 	position: relative;
 	margin-bottom: -5%;
+	max-height:990px;
+}
+
+#sunset{
+	margin-top:-9.8%;
 }
 
 .navbutton{
@@ -129,7 +134,7 @@ a:visited{
 }
 .fullimagefirst{
 	position:relative;
-	min-height:800px;
+	min-height:900px;
 	color:white;
 	border-style: solid;
 	border-width: 20px 0 10px 0;
@@ -138,7 +143,7 @@ a:visited{
 
 .fullimage{
 	position:relative;
-	min-height:800px;
+	min-height:900px;
 	color:white;
 	border-style: solid;
 	border-width: 10px 0;
@@ -152,7 +157,7 @@ a:visited{
 .sectiontitle{
 	margin-top: 24%;
 	font-size:4em;
-	background-color:white;
+	background-color:rgba(255,255,255,0.9);
 	border-radius:100px;
 	border-style:solid;
 	border-width:8px;
@@ -166,7 +171,7 @@ a:visited{
 	margin-top: 20%;
 	margin-bottom: 10%;
 	font-size:4em;
-	background-color:white;
+	background-color:rgba(255,255,255,0.9);
 	border-radius:100px;
 	border-style:solid;
 	border-width:8px;
@@ -181,6 +186,22 @@ a:visited{
 .sectionaboutpage{
 	margin-top: 30%;
 	margin-bottom: 30%;
+	font-size:4em;
+	background-color:rgba(255,255,255,0.9);
+	border-radius:100px;
+	border-style:solid;
+	border-width:8px;
+	border-color: rgb(10, 28, 61);
+	color:rgb(10, 28, 61);
+	text-align:center;
+	padding: 20px 0 0 0;
+	z-index:10;
+	position:relative;
+}
+
+.sectionproduct{
+        margin-left: 30%;
+	margin-right: 30%;
 	font-size:4em;
 	background-color:white;
 	border-radius:100px;
@@ -269,13 +290,16 @@ a:visited{
 	width: 550px;
 	height: 550px;
 	margin-top: -2%;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 150%;
 	background-color: #BDDAFF;
-	border-color: #A1D0F5;
+	/*border-color: #A1D0F5;
 	border-style: solid;
-	border-width: 8px;
+	border-width: 8px;*/
 	position: absolute;
 	z-index: 2;
-	box-shadow: 10px 10px rgba(8, 57, 102, 0.5);
+	/*box-shadow: 10px 10px rgba(8, 57, 102, 0.5);*/
 	
 }
 
@@ -286,19 +310,22 @@ a:visited{
 	height: 700px;
 	float:right;
 	margin-top: -13%;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 150%;
 	background-color: #BDDAFF;
-	border-color: #A1D0F5;
+	/*border-color: #A1D0F5;
 	border-style: solid;
-	border-width: 8px;
+	border-width: 8px;*/
 	position: absolute;
 	z-index: 2;
-	box-shadow: 10px 10px rgba(8, 57, 102, 0.5);
+	/*box-shadow: 10px 10px rgba(8, 57, 102, 0.5);*/
 	
 }
 
 .circle3{
 	border-radius: 275px;
-	right: 20%;
+	right: 25%;
 	top: 2000px;
 	width: 300px;
 	height: 300px;
@@ -498,33 +525,75 @@ a:visited{
 	margin-top: -7%;
 }
 
-.biography{
+#biorow{
+	border-style:solid;
+	border-color: rgb(10, 28, 61);
+	border-width: 10px 0 0 0;	
+}
+
+#biocontainer{
+	
+}
+
+.biobox{
+	background-color: rgba(255,255,255,0.8);
 	margin-top: 5%;
+	border-radius: 10px;
+	padding-bottom: 2%;
+}
+
+.header{
+	color:rgb(10, 28, 61);
+	font-size:3em;
+	text-align:center;
+	padding-top:2%;
+}
+
+.biography{
 	font-size: 1.5em;
 	font-family: helvetica;
-	font-weight:bold;
-	line-height: 110%;
-	border-radius: 80px;
-	border-style: solid;
-	padding: 30px;
-	border-width: 6px;
-	border-color: rgb(10, 28, 61);
+	line-height: 200%;
+	/*border-radius: 80px;
+	border-style: solid;*/
+	padding: 0px 30px 0 30px;
+	/*border-width: 6px;
+	border-color: rgb(10, 28, 61);*/
 	color:rgb(10, 28, 61);
 }
 
+.bioimage{
+	text-align:center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	img{
+		max-width:800px;
+		width:100%;
+		box-shadow: 4px 4px 10px black;
+	   }
+}
+
 .productimage{
-	border-radius:20px;
-	border-style: solid;
-	border-width: 10px;
-	border-color: #0a1c3d;
+	border-radius:185px;
 }
 
 .productrow{
 	text-align:center;
+	
 }
 
 .products{
 	color: #0a1c3d;
+	
+	border-radius:30px;
+	padding-bottom: 3%;
+}
+
+.productcategory{
+	background-color: rgba(255,255,255,0.7);
+}
+
+#productpicture{
+	background-position-y: -150px;
 }
 
 .btn-seafood{
@@ -542,11 +611,24 @@ a:visited{
 }
 
 .btn-sun{
-	background-color: #F78E09;
-	border-style: none;
+	background-color: rgba(7, 20, 51, 0.6);
+	border-style: solid;
+	border-radius:30px;
 	color:white;
-	font-size: 2em;
+	font-size: 1.7em;
+	border-width: 4px;
+	border-color: rgba(0,0,0,0.05);
+	transition: background-color 200ms;
 }
+
+.btn-sun:hover{
+	color: #0a1c3d;
+	background-color: rgba(255,255,255,1);
+	border-radius: 50px;
+	border-color: #0a1c3d;
+	border-style: solid;
+	border-width: 4px;
+}	
 
 .modify{
 	text-align:center;
@@ -554,18 +636,18 @@ a:visited{
 }
 
 #contactbanner{
-	background: -webkit-linear-gradient(#FCFFB3, #EC8628); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(#FCFFB3, #EC8628); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(#FCFFB3, #EC8628); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(#FCFFB3, #EC8628);
+	/*background: -webkit-linear-gradient(#FCFFB3, #EC8628); 
+  	background: -o-linear-gradient(#FCFFB3, #EC8628);
+  	background: -moz-linear-gradient(#FCFFB3, #EC8628);
+  	background: linear-gradient(#FCFFB3, #EC8628);*/
 	position:relative;
 }
 
 .contactpage{
-	background: -webkit-linear-gradient(#007DB8, #004566); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(#007DB8, #004566); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(#007DB8, #004566); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(#007DB8, #004566);
+	/*background: -webkit-linear-gradient(#007DB8, #004566); 
+  	background: -o-linear-gradient(#007DB8, #004566); 
+  	background: -moz-linear-gradient(#007DB8, #004566); 
+  	background: linear-gradient(#007DB8, #004566);*/
 	position:relative;
 }
 
@@ -576,6 +658,7 @@ a:visited{
 	label{
 		color:white;
 		font-size: 1.5em;
+		text-shadow: -1px 1px 3px #000;
 	}
 }
 
@@ -584,22 +667,28 @@ a:visited{
 }
 
 #contact_name{
-	border-style: none;
+	border-style: solid;
 	border-radius:7px;
 	width:100%;
+	border-color:black;
+	background-color: rgba(255,255,255,0.8);
 }
 
 #contact_email{
-	border-style: none;
+	border-style: solid;
+	border-color:black;
 	border-radius:7px;
 	width:100%;
+	background-color: rgba(255,255,255,0.8);
 }
 
 #contact_body{
-	border-style: none;
+	border-style: solid;
+	border-color:black;
 	border-radius:10px;
 	width:100%;
 	font-family: helvetica;
+	background-color: rgba(255,255,255,0.8);
 }
 
 .footersus{
@@ -615,11 +704,12 @@ a:visited{
 .footertact{
 	padding: 60px;
 	color:white;
-	background-color: #004566;
+	/*background-color: #004566;*/
 	font-size: 1.5em;
 }
 
 .footer{
+	color: rgb(10, 28, 61);
 	padding: 60px;
 	font-size: 1.5em;
 }
@@ -637,6 +727,9 @@ a:visited{
 		padding-top:400px;
 		padding-left:0;
 		padding-bottom:300px;
+	}
+	#productpicture{
+		background-position-y: -100px;
 	}
 }
 
@@ -670,6 +763,9 @@ a:visited{
 	.nav{
 		margin-top: 3%;
 	}
+	#productpicture{
+		background-position-y: -50px;
+	}
 
 }
 
@@ -684,7 +780,7 @@ a:visited{
 		left: 10%;
 		right: 10%;
 	}
-	.sectiontitle, .sectiontitlepage{
+	.sectiontitle, .sectiontitlepage, .sectionproduct, .sectionaboutpage{
 		font-size:3em;
 	}
 	#lobster{
@@ -719,15 +815,17 @@ a:visited{
 		left: 0;
 		right: 0;
 	}
-	.sectiontitle, .sectiontitlepage{
+	.sectiontitle, .sectiontitlepage, .sectionproduct, .sectionaboutpage{
 		font-size:2em;
 	}
-	.footersus{
-		padding-top:300px;
-		padding-left:0;
+	.sectionaboutpage{
+		margin-top: 15%;
 	}
 	.sectiontitle{
 		margin-top: 10%;
+	}
+	#productpicture{
+		background-position-y: 0px;
 	}
 	.sectiondesc{
 		font-size:0.9em;
@@ -745,6 +843,17 @@ a:visited{
 	.footer{
 		padding: 60px 0 60px 0;
 		font-size: 1.2em;
+	}
+	.footersus{
+		padding-top:300px;
+		padding-left:0;
+	}
+	.biography{
+		font-size:1.2em;
+		padding: 0 10px;
+	}
+	.header{
+		font-size:2em;
 	}
 }
 
@@ -776,7 +885,7 @@ a:visited{
 		line-height:130%;
 		text-shadow: 1px 1px rgb(10, 28, 61);
 	}
-	.sectiontitle, .sectiontitlepage{
+	.sectiontitle, .sectiontitlepage, .sectionproduct, .sectionaboutpage{
 		font-size:1.2em;
 	}
 	.footersus{
@@ -803,9 +912,10 @@ a:visited{
 			text-align: center;
 		}
 	}
-	.sectiontitle, .sectiontitlepage{
+	.sectiontitle, .sectiontitlepage, .sectionproduct, .sectionaboutpage{
 		font-size:1em;
 		padding-top: 10px;
+		
 	}
 	.navbuttonsmall{
 		font-size: 1.2em;

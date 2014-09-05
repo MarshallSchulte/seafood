@@ -6,14 +6,14 @@ meta keywords: %q(conservation, regulation)
 
 <script>
 $(document).ready(function(){
-	$.stellar( {hideDistantElements: false} );
+	$.stellar( {horizontalScrolling: true, verticalScrolling: false} );
 	$(window).resize(function() {
 		$.stellar('refresh');
 	});
 });
 $(window).load(function(){
 	$.stellar('refresh');
-}
+});
 </script>
 	<div class="circle3" data-stellar-ratio="2"></div>
 	<div class="circle4" data-stellar-ratio="2.5"></div>
@@ -26,7 +26,11 @@ $(window).load(function(){
 	<div class="circle11 hidden-xs" data-stellar-ratio="1.5"></div>
 	<div class="circle12 hidden-xs" data-stellar-ratio="1.9"></div>
 	<div class="circle13 hidden-xs" data-stellar-ratio="1.8"></div>
-	<img id="sill1" data-stellar-ratio="1.1" src="fishsill.png">
+	<div class="row" style="height: 500px"></div>
+	<div id="destination1">
+	    <div style="width: 400px; height: 400px;">
+		<img id="sill1" data-stellar-ratio="4" data-stellar-horizontal-offset="-400" src="fishsill.png"></div>
+	</div>
 	<img id="sill2" data-stellar-ratio="1.1" src="fish2sill.png">
 	<img id="sill3" data-stellar-ratio="1.1" src="bassill.png">
 <div id="susnav"><%= render 'layouts/navbar' %></div>
