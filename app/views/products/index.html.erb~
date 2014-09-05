@@ -5,12 +5,12 @@ meta keywords: %q(seafood, seafood distribution)
 %>
 
 <div id="susnav"><%= render 'layouts/navbar' %></div>
-<div class="container-fluid" style="background-image: url(''); background-size: cover;">
+<div class="container-fluid" style="background: linear-gradient(#B3E7FF, #1987BB);; background-size: cover;">
 <div class="row">
 	<section id="productpicture" style="">
 		
 		<div class="container sections">
-			<h2 class="sectiontitlepage" style="margin-bottom: 3%;">Products</h2>
+			<h2 class="sectiontitlepage" style="margin-bottom: 5%;">Products</h2>
 		</div>
 	</section>
 </div>

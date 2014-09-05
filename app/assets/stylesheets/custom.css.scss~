@@ -89,9 +89,6 @@ a:visited{
 
 .box-shadow-menu:hover {
   background-color: #0a1c3d;
-  box-shadow: 
-    0 0.25em 0 0 #0a1c3d,
-    0 0.5em 0 0 #0a1c3d;
 }
 
 .dropdown-toggle{
@@ -202,17 +199,13 @@ a:visited{
 .sectionproduct{
         margin-left: 30%;
 	margin-right: 30%;
-	font-size:4em;
-	background-color:white;
-	border-radius:100px;
-	border-style:solid;
-	border-width:8px;
-	border-color: rgb(10, 28, 61);
+	font-size:5em;
 	color:rgb(10, 28, 61);
 	text-align:center;
 	padding: 20px 0 0 0;
 	z-index:10;
 	position:relative;
+	color:white;
 }
 
 .sectiondesc{
@@ -233,18 +226,18 @@ a:visited{
 }
 
 .ocean{
-	background: -webkit-linear-gradient(#B3E7FF, #1987BB); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(#B3E7FF, #1987BB); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(#B3E7FF, #1987BB); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(#B3E7FF, #1987BB);
+	background: linear-gradient(rgba(249, 255, 212, 1), rgba(0, 83, 122, 1));/* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgba(249, 255, 212, 1), rgba(0, 83, 122, 1)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(rgba(249, 255, 212, 1), rgba(0, 83, 122, 1)); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(rgba(249, 255, 212, 1), rgba(0, 83, 122, 1));
 	position:relative;
 }
 
 .ocean2{
-	background: -webkit-linear-gradient(#1987BB, #003E5C); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(#1987BB, #003E5C); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(#1987BB, #003E5C); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(#1987BB, #003E5C);
+	background: -webkit-linear-gradient(#00537A, rgba(0, 15, 23, 1)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#00537A, rgba(0, 15, 23, 1)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#00537A, rgba(0, 15, 23, 1)); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#00537A, rgba(0, 15, 23, 1));
 	position:relative;
 }
 
@@ -292,7 +285,6 @@ a:visited{
 	margin-top: -2%;
 	font-weight: bold;
 	letter-spacing: -1px;
-	line-height: 150%;
 	background-color: #BDDAFF;
 	/*border-color: #A1D0F5;
 	border-style: solid;
@@ -300,6 +292,9 @@ a:visited{
 	position: absolute;
 	z-index: 2;
 	/*box-shadow: 10px 10px rgba(8, 57, 102, 0.5);*/
+	p{
+		line-height: 150%;
+	}
 	
 }
 
@@ -320,6 +315,9 @@ a:visited{
 	position: absolute;
 	z-index: 2;
 	/*box-shadow: 10px 10px rgba(8, 57, 102, 0.5);*/
+	p{
+		line-height: 150%;
+	}
 	
 }
 
@@ -572,8 +570,21 @@ a:visited{
 	   }
 }
 
+#productbackground{
+	background: linear-gradient(rgba(0, 104, 152, 1), rgba(0, 29, 42, 1));
+	background: -webkit-linear-gradient(rgba(0, 104, 152, 1), rgba(0, 29, 42, 1)); 
+  	background: -o-linear-gradient(rgba(0, 104, 152, 1), rgba(0, 29, 42, 1));
+  	background: -moz-linear-gradient(rgba(0, 104, 152, 1), rgba(0, 29, 42, 1));
+
+}
+
 .productimage{
 	border-radius:185px;
+	transition: opacity 200ms;
+}
+
+.productimage:hover{
+	opacity:0.5;
 }
 
 .productrow{
@@ -583,13 +594,19 @@ a:visited{
 
 .products{
 	color: #0a1c3d;
-	
 	border-radius:30px;
 	padding-bottom: 3%;
+	h3{
+		font-family: helvetica;
+		font-weight: bold;
+		font-size: 3em;
+		letter-spacing: -1px;
+		color:white;
+	}
 }
 
 .productcategory{
-	background-color: rgba(255,255,255,0.7);
+	color:white;
 }
 
 #productpicture{
@@ -611,9 +628,9 @@ a:visited{
 }
 
 .btn-sun{
-	background-color: rgba(7, 20, 51, 0.6);
+	background-color: rgba(7, 20, 51, 1);
 	border-style: solid;
-	border-radius:30px;
+	border-radius:15px;
 	color:white;
 	font-size: 1.7em;
 	border-width: 4px;
@@ -693,7 +710,7 @@ a:visited{
 
 .footersus{
 	padding: 60px;
-	background-color: rgb(173, 156, 133);
+	background-color: rgba(102, 91, 75, 1);
 	position: relative;
 	left: 0;
 	right: 0;
@@ -758,7 +775,7 @@ a:visited{
 	}
 	.fullimagefirst, .fullimage{
 		min-height: 350px;
-		border-width:5px;
+		border-width:5px 0 5px 0;
 	}
 	.nav{
 		margin-top: 3%;
@@ -801,7 +818,7 @@ a:visited{
 	}
 	.fullimagefirst, .fullimage{
 		min-height: 450px;
-		border-width:5px;
+		border-width:5px 0 5px 0;
 	}
 	.nav{
 		margin-top: 3%;
@@ -814,6 +831,12 @@ a:visited{
 		height:450px;
 		left: 0;
 		right: 0;
+	}
+	.logo{
+		margin-bottom: -60%;
+		img{
+			width: 55%;
+		}
 	}
 	.sectiontitle, .sectiontitlepage, .sectionproduct, .sectionaboutpage{
 		font-size:2em;
@@ -835,10 +858,13 @@ a:visited{
 	}
 	.fullimagefirst, .fullimage{
 		min-height: 350px;
-		border-width:5px;
+		border-width:5px 0 5px 0;
 	}
 	.nav{
 		margin-top: 3%;
+	}
+	.navbutton{
+		background-color: #0a1c3d;
 	}
 	.footer{
 		padding: 60px 0 60px 0;
@@ -872,7 +898,7 @@ a:visited{
 	.fullimagefirst, .fullimage{
 		height: 250px;
 		min-height:250px;
-		border-width:5px;
+		border-width:5px 0 5px 0;
 	}
 	.nav{
 		margin-top: 3%;
@@ -929,7 +955,7 @@ a:visited{
 	.fullimagefirst, .fullimage{
 		height: 200px;
 		min-height:250px;
-		border-width:5px;
+		border-width:5px 0 5px 0;
 	}
 }
 
