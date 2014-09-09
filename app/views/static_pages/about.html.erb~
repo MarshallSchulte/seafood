@@ -3,7 +3,7 @@
 meta keywords: %q(about)
 %>
 
-<div id="susnav"><%= render 'layouts/navbar' %></div>
+<div id="susnav"><%= render 'layouts/navbar2' %></div>
 <div class="row">
 	<section style="background-image: url('/seafood3.jpg'); background-size: cover;">
 		
@@ -34,7 +34,7 @@ meta keywords: %q(about)
 			<p class="biography">The seafood industry has been through a lot of changes and there are more to come. Fortunately, the time invested into customer and vendor relationships over the years has built trust and history that has enabled George's Seafood thrive and survive.  George's dedication and love for this business has allowed him to adapt and succeed in today's challenges for small businesses and the ever-changing seafood industry. </p>
 		</div>
 			<div class="bioimage"><img src="BASS.jpg" alt="Two Fisherman, one a Bass up proudly"></div>
-			<div class="row footer">
+			<div class="row footertact">
 			  <div class="col-md-6 col-sm-12 col-xs-12" id="footer">
 				© 2014 George's Seafood, Inc.
 			  </div>

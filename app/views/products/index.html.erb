@@ -4,7 +4,14 @@
 meta keywords: %q(seafood, seafood distribution)
 %>
 
-<div id="susnav"><%= render 'layouts/navbar' %></div>
+	<img class="hidden-xs" id="sill4" src="assets/fishsill.png">
+	<img class="hidden-xs" id="sill5" src="assets/fish2sill.png">
+	<img class="hidden-xs" id="sill6" src="assets/bassill.png">
+	<img class="hidden-xs" id="sill7" src="assets/fishsill.png">
+	<img class="hidden-xs" id="sill8" src="assets/fish2sill.png">
+	<img class="hidden-xs" id="sill9" src="assets/bassill.png">
+
+<div id="susnav"><%= render 'layouts/navbar2' %></div>
 <div class="container-fluid" id="productbackground" style="background: linear-gradient(rgba(0, 104, 152, 1), rgba(0, 29, 42, 1)); background-size: cover;">
 <div class="row">
 	<section id="productpicture" style="">
@@ -23,7 +30,7 @@ meta keywords: %q(seafood, seafood distribution)
    <h2 class="sectionproduct">Seasonal</h2>
     <% @products.each do |product| %>
      <% if product.seasonal? %>
-      <div class="col-md-3 col-sm-6 col-xs-12 products">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 products">
         <h3 style="text-align:center"><%= product.name %></h3>
         <div class="row productrow"><img class="productimage" src='<%= product.image_url(:thumb) %>'></div>
 	<% if user_signed_in? %>
@@ -40,7 +47,7 @@ meta keywords: %q(seafood, seafood distribution)
     <h2 class="sectionproduct">Year-round</h2>
      <% @products.each do |product| %>
       <% if product.seasonal == false %>
-       <div class="col-md-3 col-sm-6 col-xs-12 products">
+       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 products">
         <h3 style="text-align:center"><%= product.name %></h3>
         <div class="row productrow"><img class="productimage" src='<%= product.image_url(:thumb) %>'></div>
 	<% if user_signed_in? %>
