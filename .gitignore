@@ -18,10 +18,16 @@
 # Ignore database credentials
 
 /config/database.yml
-/config/database.yml~
 
 /config/initializers/setup_mail.rb
-/config/initializers/setup_mail.rb~
 /app/mailers/contacts_mailer.rb
 
 /public/uploads
+
+# Ignore backup files
+*.rb~
+*.yml~
+*.gitignore~
+*.secret~
+*.rspec~
+*Gemfile~
