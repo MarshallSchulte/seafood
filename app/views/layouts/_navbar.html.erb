@@ -1,7 +1,7 @@
 <div class="row nav center-block hidden-sm hidden-xs" data-no-turbolink>
      	<div class="col-md-1 col-sm-1 col-xs-1"></div>
 	<div data-no-turbolink>
-	<%= link_to (sanitize '<div class="col-md-2 col-sm-2 col-xs-2 navbutton">
+	<%= link_to (sanitize '<div class="col-md-2 col-sm-2 col-xs-2 navbutton" id="firstnav">
 		<h1>Home</h1>
 	</div>'), root_path %></div>
 	<div data-no-turbolink>
@@ -17,7 +17,7 @@
 		<h1>Products</h1>
 	</div>'), products_path %></div>
 	<div data-no-turbolink>
-	<%= link_to (sanitize '<div class="col-md-2 col-sm-2 col-xs-2 navbutton">
+	<%= link_to (sanitize '<div class="col-md-2 col-sm-2 col-xs-2 navbutton" id="lastnav">
 		<h1>Contact Us</h1>
 	</div>'), "/contact" %></div>
 	<div class="col-md-1 col-sm-1 col-xs-1"></div>
@@ -25,11 +25,11 @@
 
 <div class="row nav center-block visible-sm visible-xs" data-no-turbolink>
      <div data-no-turbolink>
-	<%= link_to (sanitize '<div class="col-md-6 col-sm-6 col-xs-6 navbutton">
+	<%= link_to (sanitize '<div class="col-md-6 col-sm-6 col-xs-6 navbutton home">
 		HOME
 	</div>'), root_path %></div>
      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-	<div class="col-sm-6 col-xs-6 dropdown navbutton "><span class="box-shadow-menu"></span>
+	<div class="col-sm-6 col-xs-6 dropdown navbutton drop"><span class="box-shadow-menu"></span>
               
 		<ul class="dropdown-menu">
 		

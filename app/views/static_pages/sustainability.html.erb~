@@ -73,7 +73,7 @@ $(window).load(function(){
 <div class="row ocean3">
 	<div class="container oceans">
 		<div id="circle-logos">
-				<p id="mi">More Information</p>
+				<p id="mi">>More Information</p>
 				<a href="http://www.nmfs.noaa.gov/"><img id="noaa" src="assets/noaa_logo.png"></a>
 				<a href="http://www.mrc.virginia.gov/commercial.shtm"><img src="assets/VMRC_logo.png"></a>
 		</div>

@@ -61,7 +61,7 @@ meta keywords: %q(seafood, seafood distribution)
 		 <% end %>
 		</div>
 
-		<div class="footerduct">
+		<div class="container footerduct">
 			<div class="col-md-6 col-sm-12 col-xs-12" id="footerduct">
 			© 2014 George's Seafood, Inc.
 			</div>

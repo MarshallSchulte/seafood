@@ -1,7 +1,7 @@
 <div class="row nav2 center-block hidden-sm hidden-xs" data-no-turbolink>
      	<div class="col-md-1 col-sm-1 col-xs-1"></div>
 	<div data-no-turbolink>
-	<%= link_to (sanitize '<div class="col-md-2 col-sm-2 col-xs-2 navbutton" id="firstnav">
+	<%= link_to (sanitize '<div class="col-md-2 col-sm-2 col-xs-2 navbutton">
 		<h1>Home</h1>
 	</div>'), root_path %></div>
 	<div data-no-turbolink>
@@ -17,7 +17,7 @@
 		<h1>Products</h1>
 	</div>'), products_path %></div>
 	<div data-no-turbolink>
-	<%= link_to (sanitize '<div class="col-md-2 col-sm-2 col-xs-2 navbutton" id="lastnav">
+	<%= link_to (sanitize '<div class="col-md-2 col-sm-2 col-xs-2 navbutton">
 		<h1>Contact Us</h1>
 	</div>'), "/contact" %></div>
 	<div class="col-md-1 col-sm-1 col-xs-1"></div>

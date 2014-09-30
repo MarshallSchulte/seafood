@@ -1163,7 +1163,7 @@ background-image: url('P1000134.JPG');
 		}
 	}
 	.nav{
-		margin-top:-7%;
+		margin-top:-8%;
 	}
 	.footer{
 		padding: 60px 0 60px 0;
