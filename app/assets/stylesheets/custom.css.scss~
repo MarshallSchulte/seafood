@@ -248,7 +248,7 @@ live resizing
 	color:rgb(10, 28, 61);
 	text-align:center;
 	padding: 20px 0 0 0;
-	z-index:10;
+	z-index:9;
 	position:relative;
 	width:40%;
 	margin-left:auto;
@@ -754,7 +754,9 @@ live resizing
 }
 
 #productcontainer{
-background-image: url('P1000134.JPG');
+background-image: url('product-background.jpg');
+background-size:cover;
+background-position: center;
 }
 
 .productimage{
@@ -1111,6 +1113,9 @@ background-image: url('P1000134.JPG');
 	#contact-banner{
 		background-image: url('george-medium.jpg');
 	}
+	#productcontainer{
+		background-image: url('product-background-medium.jpg');
+	}
 }
 
 @media screen and (max-width:767px){
@@ -1163,7 +1168,7 @@ background-image: url('P1000134.JPG');
 		}
 	}
 	.nav{
-		margin-top:-8%;
+		margin-top:-7%;
 	}
 	.footer{
 		padding: 60px 0 60px 0;
@@ -1265,6 +1270,9 @@ background-image: url('P1000134.JPG');
 		padding-left: 0;
 		padding-top: 200px;
 	}
+	#footerduct{
+		margin-left:0;
+	}
 	#susnav{
 		margin-bottom: -15%;
 	}
@@ -1335,6 +1343,10 @@ background-image: url('P1000134.JPG');
 
 	#contact-banner{
 		background-image: url('george-small.jpg');
+	}
+	#productcontainer{
+		background-image: none;
+		background-color:white;
 	}
 }
 
