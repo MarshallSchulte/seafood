@@ -1303,9 +1303,9 @@ background-position: center;
 		left: 0%;
 	}
 	.logo{
-		margin-bottom: -60%;
+		margin-bottom: -50%;
 		img{
-			width: 55%;
+			width: 45%;
 		}
 	}
 	.sectiontitle, .sectiontitlepage, .sectionaboutpage{
@@ -1353,5 +1353,11 @@ background-position: center;
 @media screen and (max-width:320px){
 	.navbutton{
 		font-size: 1.6em;
+	}
+	.logo{
+		margin-bottom: -60%;
+		img{
+			width: 55%;
+		}
 	}
 }

@@ -192,7 +192,7 @@ live resizing
 #hero-banner{
 	background-image: url('sunset.jpg');
 	background-size:cover;
-	background-position-y: 0;
+	background-position: 0;
 	margin-bottom: -5%;
 	min-height:1000px;
 }
@@ -1303,9 +1303,9 @@ background-position: center;
 		left: 0%;
 	}
 	.logo{
-		margin-bottom: -60%;
+		margin-bottom: -50%;
 		img{
-			width: 55%;
+			width: 45%;
 		}
 	}
 	.sectiontitle, .sectiontitlepage, .sectionaboutpage{
