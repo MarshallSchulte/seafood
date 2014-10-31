@@ -387,8 +387,8 @@ live resizing
 .circle2{
 	border-radius: 350px;
 	right: 30%;
-	width: 700px;
-	height: 700px;
+	width: 500px;
+	height: 500px;
 	float:right;
 	margin-top: -13%;
 	font-weight: bold;
@@ -804,6 +804,7 @@ background-position: center;
 .productcategory{
 	color:#0a1c3d;
 	background-color: rgba(255,255,255,0.6);
+	padding-bottom: 5%;
 }
 
 #productpicture{

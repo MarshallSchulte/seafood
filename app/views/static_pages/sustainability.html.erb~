@@ -56,7 +56,7 @@ $(window).load(function(){
 	
 	<div class="container oceans">
 		<div class="circle writing">
-			<p>For there to be a future in the seafood industry, there must be fish in the sea to catch. It sounds simple, but if we fish too much, we risk driving species to extinction, and then where would we be? It has happened before, and it can happen again unless we do something about it.
+			<p>For there to be a future in the seafood industry, there must be fish in the sea to catch. If we catch too many fish, we risk driving species to extinction, and then where would we be? It has happened before, and it can happen again unless we do something about it.
 			</p>
 		
 		</div>
@@ -65,7 +65,7 @@ $(window).load(function(){
 <div class="row ocean2">
 	<div class="container oceans">
 		<div class="circle2 writing2">
-			<p> We strive to provide, in cooperation with NMFS and the VMRC, local seafood directly from fisherman. Regulations help to ensure that the ocean's beauty and biological diversity will still be there for tomorrow to enjoy.
+			<p> Regulations help to ensure that the ocean's beauty and biological diversity will still be there for tomorrow to enjoy. In cooperation with NMFS and the VMRC, we strive to provide local seafood directly from fisherman. 
 			</p>
 		</div>
 	</div>

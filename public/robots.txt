@@ -3,3 +3,9 @@
 # To ban all spiders from the entire site uncomment the next two lines:
 # User-agent: *
 # Disallow: /
+User-agent: *
+Disallow: page/*/new
+Disallow: page/*/edit
+Disallow: page/*/new
+Disallow: /cgi-bin/
+Sitemap: http://www.georgesseafoodinc.com/sitemap.xml.gz

@@ -1,7 +1,7 @@
 <% provide(:title, "Products") %>
 
 <%
-meta keywords: %q(seafood, seafood distribution)
+	keywords %q(seafood, seafood distribution)
 %>
 
 
@@ -25,40 +25,50 @@ meta keywords: %q(seafood, seafood distribution)
  	<p class="alert"><%= alert %></p>
 </div>
 <% end %>
+
 	<div id="productcontainer">
+	 
 		<div class="productcategory row">
 		 <h2 class="sectionproduct">Seasonal</h2>
-		  <% @products.each do |product| %>
-		   <% if product.seasonal? %>
-		    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 products">
-		      <div class="row productrow"><img class="productimage" src='<%= product.image_url(:thumb) %>'></div>
-					<h3 style="text-align:center"><%= product.name %></h3>
-		<% if user_signed_in? %>
-			<div class="row modify">
-			<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Edit', edit_product_path(product), class: "btn btn-lg btn-seafood" %></div>
-			<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-lg btn-seafood" %></div>
-			</div>
-		<% end %>
-		    </div>
-		   <% end %>
-		  <% end %>
+			<% if @products.any? %>
+				<% @products.each do |product| %>
+				 <% if product.seasonal? %>
+				  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 products">
+				    <div class="row productrow"><img class="productimage" src='<%= product.image_url(:thumb) %>'></div>
+						<h3 style="text-align:center"><%= product.name %></h3>
+						<% if user_signed_in? %>
+							<div class="row modify">
+								<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Edit', edit_product_path(product), class: "btn btn-lg btn-seafood" %></div>
+								<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-lg btn-seafood" %></div>
+							</div>
+						<% end %>
+				  </div>
+				 <% end %>
+				<% end %>
+			<% else %>
+				<h2 style="text-align:center">We have no seasonal listings at the moment. Please try again later!</h2>
+			<% end %>
 		 </div>
 		 <div class="productcategory row">
 		  <h2 class="sectionproduct">Year-round</h2>
-		   <% @products.each do |product| %>
-		    <% if product.seasonal == false %>
-		     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 products">
-		      <div class="row productrow"><img class="productimage" src='<%= product.image_url(:thumb) %>'></div>
-					<h3 style="text-align:center"><%= product.name %></h3>
-		<% if user_signed_in? %>
-			<div class="row modify">
-			<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Edit', edit_product_path(product), class: "btn btn-lg btn-seafood" %></div>
-			<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-lg btn-seafood" %></div>
-			</div>
-		<% end %>
-		    </div>
-		  <% end %>
-		 <% end %>
+				<% if @products.any? %>
+				 <% @products.each do |product| %>
+				  <% if product.seasonal == false %>
+				   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 products">
+				    <div class="row productrow"><img class="productimage" src='<%= product.image_url(:thumb) %>'></div>
+						<h3 style="text-align:center"><%= product.name %></h3>
+						<% if user_signed_in? %>
+							<div class="row modify">
+							<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Edit', edit_product_path(product), class: "btn btn-lg btn-seafood" %></div>
+							<div class="col-md-6 col-sm-6 col-xs-6"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-lg btn-seafood" %></div>
+							</div>
+						<% end %>
+				  </div>
+				<% end %>
+			 <% end %>
+			<% else %>
+				<h2 style="text-align:center">We have no year-round seafood listings at the moment. Please try again later!</h2>
+			<% end %>
 		</div>
 
 		<div class="footerduct">
