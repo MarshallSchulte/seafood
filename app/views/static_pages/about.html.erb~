@@ -1,11 +1,11 @@
 <% provide(:title, "About Us") %>
 <%
-meta keywords: %q(about)
+keywords %q(about)
 %>
 
 <div id="susnav"><%= render 'layouts/navbar2' %></div>
 <div class="row">
-	<section style="background-image: url('/seafood3.jpg'); background-size: cover;">
+	<section id="about-top-banner">
 		
 		<div class="container sections">
 			<h2 class="sectionaboutpage">About Us</h2>
@@ -13,7 +13,7 @@ meta keywords: %q(about)
 	</section>
 </div>
 
-<div class="row" id="biorow" style="background-image: url('IMG00020-20090830-1140.jpg'); background-size: cover; background-position:center;">
+<div class="row" id="biorow">
 	<div class="container" id="biocontainer">
 		<div class="biobox">
 			<h2 class="header">The Business</h2>		
@@ -24,14 +24,14 @@ meta keywords: %q(about)
 			
 			<p class="biography">George started this business 43 years ago; just two years out of high school. During those two years he worked on both commercial and sport fishing boats. George's affiliation with the local commercial and sport fisherman helped build this business. Also, having a father that was a Greek immigrant and local resturant purveyor attributed to his success. But more then anything, was sacrifice and hard work. </p>
 			
-			<div class="bioimage"><img src="Little George.jpg" alt="Young George with his father and a friend"></div>
-			<p class="biography" style="padding-top: 2%;">For years George's Seafood was an operation that distributed to local restaurants and supermarkets. As time went on, local fisherman asked George to handle their product- primarily fresh fish. Packing and shipping to mostly the North, ie. Philadelphia, Boston, and New York. In time, business spread South and West- from Georgia and Florida to Illinois, Ohio and Indianapolis.</p>
+			<div class="bioimage"><img id="little-george" alt="Young George with his father and a friend"></div>
+			<p class="biography" style="padding-top: 2%;">For years George's Seafood was an operation that distributed to local restaurants and supermarkets. As time went on, local fisherman asked George to handle their product, primarily fresh fish. Packing and shipping to mostly the North, ie. Philadelphia, Boston, and New York. In time, business spread South and West- from Georgia and Florida to Illinois, Ohio and Indianapolis.</p>
 		</div>
 		<div class="biobox">
 			<h2 class="header">The Future</h2>
 			<p class="biography">The seafood industry has been through a lot of changes and there are more to come. Fortunately, the time invested into customer and vendor relationships over the years has built trust and history that has enabled George's Seafood thrive and survive.  George's dedication and love for this business has allowed him to adapt and succeed in today's challenges for small businesses and the ever-changing seafood industry. </p>
 		</div>
-			<div class="bioimage"><img src="BASS.jpg" alt="Two Fisherman, one a Bass up proudly"></div>
+			<div class="bioimage"><img id="bass" alt="Two Fisherman, one holding a Bass up proudly"></div>
 			<div class="row footertact">
 			  <div class="col-md-6 col-sm-12 col-xs-12" id="footer">
 				© 2014 George's Seafood, Inc.
@@ -40,5 +40,20 @@ meta keywords: %q(about)
 	</div>
 
 </div>
+<script>
+	$(document).ready(function() {
+		var width = $(window).width();
+
+		if (width > 900) {
+			$('#little-george').attr('src', 'Little-George.jpg');
+			$('#bass').attr('src', 'BASS.jpg');
+		} 
+		else {
+			$('#little-george').attr('src', 'Little-George-small.jpg');
+			$('#bass').attr('src', 'BASS-small.jpg');
+		}
+	});
+
+</script>
 
 

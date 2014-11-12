@@ -57,6 +57,7 @@ live resizing
 		font-family: CooperStd;
 		transition: background-color 200ms;
 		font-size:2em;
+		margin-bottom:20px;
 	}
 }
 
@@ -83,6 +84,7 @@ live resizing
 		font-family: CooperStd;
 		transition: background-color 200ms;
 		font-size:2em;
+		margin-bottom:20px;
 	}
 }
 
@@ -230,7 +232,7 @@ live resizing
 	border-color: rgb(10, 28, 61);
 	color:rgb(10, 28, 61);
 	text-align:center;
-	padding: 20px 0 0 0;
+	padding: 20px 0 5px 0;
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
@@ -247,7 +249,7 @@ live resizing
 	border-color: rgb(10, 28, 61);
 	color:rgb(10, 28, 61);
 	text-align:center;
-	padding: 20px 0 0 0;
+	padding: 20px 0 5px 0;
 	z-index:9;
 	position:relative;
 	width:50%;
@@ -701,11 +703,15 @@ live resizing
 #biorow{
 	border-style:solid;
 	border-color: rgb(10, 28, 61);
-	border-width: 10px 0 0 0;	
+	border-width: 10px 0 0 0;
+	background-image: url('pier.jpg');
+  background-size: cover;
+  background-position:center;
 }
 
-#biocontainer{
-	
+#about-top-banner{
+	background-image: url('george.jpg');
+  background-size: cover;
 }
 
 .biobox{
@@ -885,6 +891,12 @@ background-position: center;
 
 .formcol{
 	text-align: right;
+}
+
+#contact{
+	background-image: url('contact.jpg');
+  background-size:cover;
+  background-position:center;
 }
 
 #contact_name{
@@ -1117,6 +1129,15 @@ background-position: center;
 	#productcontainer{
 		background-image: url('product-background-medium.jpg');
 	}
+	#contact{
+		background-image: url('contact-small.jpg');
+		background-size:cover;
+		background-position:center;
+	}
+	#about-top-banner{
+		background-image: url('george-medium.jpg');
+		background-size: cover;
+	}
 }
 
 @media screen and (max-width:767px){
@@ -1193,6 +1214,11 @@ background-position: center;
 	}
 	#footer{
 		font-size: 0.7em;
+	}
+	#biowrow{
+		background-image: url('pier-small.jpg');
+  	background-size: cover;
+  	background-position:center;
 	}
 }
 
@@ -1344,6 +1370,10 @@ background-position: center;
 
 	#contact-banner{
 		background-image: url('george-small.jpg');
+	}
+	#about-top-banner{
+		background-image: url('george-small.jpg');
+		background-size: cover;
 	}
 	#productcontainer{
 		background-image: none;
